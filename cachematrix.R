@@ -1,9 +1,9 @@
-## makeChcheMatrix takes an invertable matrix as its agrument and returns
+## makeCacheMatrix takes an invertable matrix as its agrument and returns
 ## a list object containing functions that will be called by cacheSolve. 
 ## The purpose of these functions is to cache the inverse matrix so it
-## doesn't need to be calculated everytime it is needed.
+## isn't calculated everytime it is needed.
 
-## Takes and invertable matrix and returns a list of functions used by 
+## Takes an invertable matrix and returns a list of functions used by 
 ## cacheSolve. 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, get = get,   #return a list object with callable funcions
              setinverse = setinverse,
              getinverse = getinverse)
-        
 }
 
 
